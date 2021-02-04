@@ -1,1 +1,10 @@
-
+#footer
+{
+  width: 100%;
+  background-color: #535353;
+}
+  .footer a
+  {
+    color: white;
+    text-decoration: none;
+  }
