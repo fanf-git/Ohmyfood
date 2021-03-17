@@ -1,62 +1,73 @@
-/*-------------------------------------------------HEADER*/
+*
+  {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  h1
+  {
+    font-family: "shrikhand", sans-serif;
+    font-size: 2.3em;
+    margin-left: 23%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  h2,h3,p
+  {
+    font-family: "roboto", sans-serif;
+    font-size: 1em;
+  }
+  h4
+  {
+    font-family: "roboto", sans-serif;
+    font-size: 0.8em;
+  }
+  body
+  {
+    max-width: 420px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(246, 246, 246);
+  }
+/*-------------------------------------------------RETURN*/
 #oh
   {
     width: 100%;
+    position: relative;
   }
     .oh h1
     {
       display: flex;
       justify-content: center;
     }
-    img
-    {
-      width: 50%;
-    }
     p.ohmyfood
     {
       display: flex;
       justify-content: center;
     }
+    .fa-arrow-left
+    {
+      color: black;
+      position: absolute;
+      left: 20px;
+      top: 25px;
+    }
+
+/*------------------------------------------------DRAWING*/
 
 #drawing img
 {
   width: 100%;
 }
-#c
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
+/*----------------------------------------------TITLE*/
 #title, #starters, #dishes, #desserts, #explo
 {
   background: rgb(246, 246, 246);
 }
-  .d
-  {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    margin-bottom: 2%;
-    width: 92%;
-    height: 59px;
-    border-radius: 15px;
-    left:-15px;
-    border-left: none;
-  }
-  .d p, i
-  {
-  display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  .d h3, h4
-  {
-  margin: 0px;
-    display: flex;
-    flex-direction: column;
-  }
+#title
+{
+  position: relative;
+}
   .title
   {
     display: flex;
@@ -64,17 +75,101 @@
   }
   .title h1
   {
-  margin: 0px;
+    margin: 0px;
   }
+  .title i
+  {
+    position: absolute;
+    right: 20px;
+  }
+
+#menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .first
+  {
+    width: 92%;
+    height: 59px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    left:-15px;
+    border-left: none;
+    position: relative;
+  }
+  .first p, i
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .first h3, h4
+  {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  
+
+  /*------------------------------------STARTERS*/
   .title h2
   {
     margin: 25px 0px;
+    font-size: 2em;
   }
-#oh
+  strong
+  {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 59%;
+    right: 3%;
+  }
+  .fa-check-circle
+  {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+  }
+/*#oh
 {
   display: flex;
   align-items: center;
+}*/
+/*-------------------------------------------------CMD*/
+#explo
+{
+  height: 200px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
 }
+  .explor
+  {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient( 175deg, rgb(238,116,218), rgb(157,89,220));
+        width: 250px;
+        height: 59px;
+        border-radius: 50px;
+  }
+  .explor h3
+    {
+      color: white;
+      font-weight: 500;
+      font-size: 1.19em;
+    }
 
 /*-------------------------------------------------FOOTER*/
 
@@ -118,7 +213,7 @@
   }
   .footer a
   {
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: white;
     text-decoration: none;
   }
@@ -153,9 +248,11 @@
   .other a
   {
     color: white;
+    font-size: 1.6em;
+    font-weight: 100;
   }
   .bloc p
   {
-    margin: 0px;
+    margin-left: 10px;
     color: white;
   }
