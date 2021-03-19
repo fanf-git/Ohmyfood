@@ -75,7 +75,7 @@
   }
   .title h1
   {
-    margin: 0px;
+    margin-left: 10px;
   }
   .title i
   {
@@ -125,7 +125,10 @@
   .title h2
   {
     margin: 25px 0px;
-    font-size: 2em;
+    font-size: 1.4em;
+    font-weight: 100;
+    border-bottom: 5px solid rgb(135, 226, 208);
+      width:55px
   }
   strong
   {
