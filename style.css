@@ -167,7 +167,7 @@
     }
     .choise, .compo, .degust
     {
-      width: 90%;
+      width: 85%;
       height: 60px;
       display: flex;
       justify-content: center;
@@ -185,16 +185,16 @@
     }
     .choise p, .compo p, .degust p
     {
-      width: 10%;
+      width: 8%;
       display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
-      top: -4px;
+      top: -2px;
       left: -15px;
       background-color: rgb(147, 86, 220);
       color: white;
-      border: 10px solid rgb(147, 86, 220);
+      border: 6px solid rgb(147, 86, 220);
       border-radius: 50px;
     }
     .choise h4, .compo h4, .degust h4
@@ -264,16 +264,20 @@
     }
     .new
     {
-      width: 70px;
-      height: 22px;
+      width: 80px;
+      height: 28px;
       background-color: rgb(153, 226, 208);
       color: rgb(0, 135, 102);
       position: absolute;
-      left: 297px;
       top: 28px;
+      right: 15px;
     }
     span
     {
+      height: 28px;
+      position: absolute;
+      top: 4px;
+      left: 7px;
       display: flex;
       justify-content: center;
       font-family: 'roboto', sans-serif;
