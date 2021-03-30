@@ -6,8 +6,8 @@
   h1
   {
     font-family: "shrikhand", sans-serif;
-    font-size: 2em;
-    margin-left: 23%;
+    font-size: 1.3em;
+    /*margin-left: 23%;*/
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -27,18 +27,21 @@
     margin: 0px;
     padding: 0px;
     background-color: rgb(246, 246, 246);
+    position: relative;
   }
 /*-------------------------------------------------RETURN*/
 #oh
-  {
-    width: 100%;
-    position: relative;
-  }
-    .oh h1
-    {
-      display: flex;
-      justify-content: center;
-    }
+{
+  width: 100%;
+  position: relative;
+}
+#oh h1
+{
+  display: flex;
+  justify-content: center;
+  /*box-shadow: 4px 4px 4px #aaa;*/
+  font-size: 2.3em;
+}
     p.ohmyfood
     {
       display: flex;
@@ -49,10 +52,10 @@
       color: black;
       position: absolute;
       left: 20px;
-      top: 25px;
+      top: 20px;
     }
 
-/*------------------------------------------------DRAWING*/
+/*-------------------------------------------------DRAWING*/
 
 #drawing img
 {
@@ -61,7 +64,18 @@
   object-fit: cover;
 }
 
-/*----------------------------------------------TITLE*/
+/*-------------------------------------------------CONT*/
+
+.cont
+{
+  position: relative;
+  top: -40px;
+  border-radius: 25px;
+  background-color: rgb(246, 246, 246);
+}
+
+/*-------------------------------------------------TITLE*/
+
 #title, #starters, #dishes, #desserts, #explo
 {
   background: rgb(246, 246, 246);
@@ -69,6 +83,7 @@
 #title
 {
   position: relative;
+  border-radius: 25px;
 }
   .title
   {
@@ -78,14 +93,34 @@
   .title h1
   {
     margin-left: 10px;
+    margin-top: 10px;
   }
   .title i
   {
     position: absolute;
     right: 20px;
   }
+  .fas.fa-heart:hover
+  {
+    display: inline;
+    opacity: 1;
+    color: rgb(193, 101, 219);
+  }
+  i.far.fa-heart 
+    {
+      color: black;
+      position: absolute;
+      right: 20px;
+    }
+    i.fas.fa-heart
+    {
+      color: black;
+      opacity: 0;
+      position: absolute;
+      right: 20px;
+    }
 
-#menu
+#enter, #dish, #dessert
 {
     display: flex;
     flex-direction: column;
@@ -93,7 +128,6 @@
     align-items: center;
     position: relative;
   }
-  
   .first
   {
     width: 92%;
@@ -107,12 +141,14 @@
     left:-15px;
     border-left: none;
     position: relative;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #aaa;
   }
   .first p, i
   {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin: 0px;
   }
   .first h3, h4
   {
@@ -128,10 +164,8 @@
     font-weight: 100;
   }
 
+  /*-------------------------------------------------STARTERS*/
 
-  
-
-  /*------------------------------------STARTERS*/
   .title h2
   {
     margin: 25px 0px 25px 15px;
@@ -154,12 +188,9 @@
     top: 40%;
     right: 3%;
   }
-/*#oh
-{
-  display: flex;
-  align-items: center;
-}*/
+  
 /*-------------------------------------------------CMD*/
+
 #explo
 {
   height: 200px;
@@ -176,6 +207,7 @@
         width: 250px;
         height: 59px;
         border-radius: 50px;
+        box-shadow: 4px 4px 4px #aaa;
   }
   .explor h3
     {
@@ -189,7 +221,7 @@
 #footer
 {
   width: 100%;
-  height: 277px;
+  height: 200px;
   background-color: rgb(53, 53, 53);
 }
   .footer
@@ -261,7 +293,7 @@
   .other a
   {
     color: white;
-    font-family: 'roboto' sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 1.1em;
     font-weight: 100;
   }
