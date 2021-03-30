@@ -1,5 +1,3 @@
-/*@media screen and (max-width: 420px)*/
-/*{*/
   *
   {
     box-sizing: border-box;
@@ -9,7 +7,9 @@
   {
     font-family: "shrikhand", sans-serif;
     font-size: 1.3em;
-    margin-left: 23%;
+    /*margin-left: 7%;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   h2,h3,h4,p
   {
@@ -18,7 +18,7 @@
   }
   body
   {
-    /*background-color: rgb(246, 246, 246);*/
+    background-color: rgb(246, 246, 246);
     max-width: 420px;
     margin: 0px;
     padding: 0px;
@@ -35,6 +35,7 @@
       display: flex;
       justify-content: center;
       font-size: 2.3em;
+      /*margin-left: 7%;*/
     }
     img
     {
@@ -63,11 +64,16 @@
   }
     .search-bar i
     {
+      position: absolute;
+      top: 61px;
+      left: 105px;
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
+      color: rgb(53,53,53);
     }
     input
     {
+      width: 123px;
       border: none;
       display: flex;
       text-align: center;
@@ -123,6 +129,7 @@
       width: 250px;
       height: 59px;
       border-radius: 50px;
+      box-shadow: 4px 4px 4px #aaa;
     }
     .txt h3
     {
@@ -159,6 +166,10 @@
     {
       margin-left: 4%;
     }
+    .title h2
+    {
+      border-bottom: transparent;
+    }
     .bout
     {
       display: flex;
@@ -177,6 +188,7 @@
       position: relative;
       background-color: rgb(246,246,246);
       border-radius: 15px;
+      box-shadow: 4px 4px 4px #aaa;
     }
     .check
     {
@@ -226,25 +238,17 @@
       color: rgb(126,126,126);
       font-size: 1.3em;
     }
-    /*.choise i:hover, .compo i:hover, .degust i:hover
-    {
-      color: rgb(147, 86, 220)
-    }*/
     .choise:hover, .compo:hover, .degust:hover
     {
       background-color: rgb(245,237,255);
 
     }
-    /*.compo:hover > .check:hover
-    {
-      color : rgb(147,86,220);
-    }*/
-    .choise:hover > .check i:hover, .compo:hover > .check i:hover, .degust:hover > .check i:hover
+    .choise:hover > .check i, .compo:hover > .check i, .degust:hover > .check i
     {
       color: rgb(147, 86, 220);
     }
 
-/*--------------------------CONTAINER*/
+/*-------------------------------------------------CONTAINER*/
 
   #resto
   {
@@ -290,8 +294,9 @@
     .carte figure
     {
       width: 92%;
-      height: 292px;
+      height: 275px;
       margin-left: 3%;
+      margin-top: 7px;
       background-color: #ffffff;
       border-radius: 25px;
       /*box-shadow: 4px 4px 6px #aaa;*/
@@ -311,23 +316,22 @@
       margin-left: 12px;
       display: flex;
       flex-direction: row;
+      position: relative;
     }
     i.far.fa-heart 
     {
       color: black;
       position: absolute;
-      /*left: 300px;*/
       right: 15px;
-      top: 220px;
+      top: 12px;
     }
     i.fas.fa-heart
     {
       color: black;
       opacity: 0;
       position: absolute;
-      /*left: 300px;*/
       right: 15px;
-      top: 220px;
+      top: 12px;
     }
     .fas.fa-heart:hover
     {
@@ -337,7 +341,12 @@
     }
     .carte p
     {
+      /*margin-left: 12px;*/
       color: black;
+      position: absolute;
+      margin: 0px;
+      left: 0px;
+      top: 25px;
     }
     .carte h4
     {
@@ -364,17 +373,13 @@
     {
       margin-left: 12px;
     }
-    /*.b :hover
-    {
-      color: rgb(147, 86, 220);
-    }*/
 
 /*-------------------------------------------------FOOTER*/
 
   #footer
   {
     width: 100%;
-    height: 277px;
+    height: 200px;
     background-color: rgb(53, 53, 53);
   }
     .footer
@@ -455,63 +460,3 @@
       margin-left: 10px;
       color: white;
     }
-
-/*-------------------------------------------------carte*/
-
-  /*#drawing img
-  {
-    width: 100%;
-  }*/
-  /*#c
-  {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }*/
-  /*#title, #starters, #dishes, #desserts, #explo
-  {
-    background: rgb(246, 246, 246);
-  }
-    .d
-    {
-      display: flex;
-      flex-direction: column;
-      background: white;
-      margin-bottom: 2%;
-      width: 92%;
-      height: 59px;
-      border-radius: 15px;
-      left:-15px;
-      border-left: none;
-    }
-    .d p, i
-    {
-    display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-    .d h3, h4
-    {
-    margin: 0px;
-      display: flex;
-      flex-direction: column;
-    }
-    .title
-    {
-      display: flex;
-      align-items: center;
-    }
-    .title h1
-    {
-    margin: 0px;
-    }
-    .title h2
-    {
-      margin: 25px 0px;
-    }
-  #oh
-  {
-    display: flex;
-    align-items: center;
-  }*/
