@@ -325,6 +325,55 @@ i.fas.fa-heart {
     margin-left: 12px;
   }
 
+@media screen and (min-width:580px) and (max-width: 1440px){
+  .search-bar i{
+    position: absolute;
+    left: 580px;
+  }
+  #res{
+    padding-top: 0px;
+  }
+  .txt{
+    padding: 20px;
+  }
+  #explo{
+    display: flex;
+    padding: 60px;
+  }
+  #fonction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bout{
+    display: flex;
+    width: 1110px;
+    flex-direction: row;
+  }
+  .choise, .compo, .degust{
+    width: 25%;
+    margin-right: 50px;
+  }
+  .choise p, .compo p, .degust p{
+    width: 13%;
+  }
+  .fa-mobile-alt,.fa-list-ul,.fa-store{
+    position: absolute;
+    left: 32px;
+  }
+  #resto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .carte{
+    width: 500px;
+  }
+  #footer{
+    top: 1918px;
+  }
+}
 /* soucreMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

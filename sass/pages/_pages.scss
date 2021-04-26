@@ -10,7 +10,6 @@
   position: relative;
 }
     .header_logo{
-      /*font-family: skrikhand,"cursive";*/
       margin: 0;
       font-size: 2.3em;
       text-align: center;
@@ -20,7 +19,7 @@
       left: 3rem;
       height: 2rem;
       width: 2rem;
-      top: 30px;
+      top: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -356,4 +355,26 @@
   {
     margin-left: 10px;
     color: white;
+  }
+
+  @media screen and (min-width:580px) and (max-width: 1440px){
+    .header_arrow{
+      left: 500px;
+      top: 47px;
+    }
+    .container{
+      max-width: 1440px;
+      position: relative;
+    }
+    .men{
+      display: flex;
+    }
+    #title{
+      display: flex;
+      justify-content: center;
+    }
+    #starters, #dishes, #desserts{
+      width: 500px;
+      margin-left: 35%;
+    }
   }
