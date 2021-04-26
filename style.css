@@ -47,7 +47,7 @@ h2, h3, h4, p {
   height: 200px;
   background-color: #353535;
   position: absolute;
-  top: 1980px;
+  top: 1964px;
 }
 
 .footer {
@@ -561,7 +561,7 @@ p.oh {
 
   #starters, #dishes, #desserts {
     width: 500px;
-    margin-left: 35%;
+    margin-left: 30%;
   }
 }
 /*-------------------------------------------------LOADER*/
