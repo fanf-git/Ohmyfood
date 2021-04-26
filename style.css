@@ -47,7 +47,7 @@ h2, h3, h4, p {
   height: 200px;
   background-color: #353535;
   position: absolute;
-  top: 1960px;
+  top: 1980px;
 }
 
 .footer {
@@ -126,6 +126,11 @@ p.oh {
   color: white;
 }
 
+@media screen and (min-width: 580px) and (max-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
+}
 /*ACCUEIL*/
 @-webkit-keyframes loader {
   100% {
@@ -175,7 +180,6 @@ p.oh {
 }
 
 .header_logo {
-  /*font-family: skrikhand,"cursive";*/
   margin: 0;
   font-size: 2.3em;
   text-align: center;
@@ -186,7 +190,7 @@ p.oh {
   left: 3rem;
   height: 2rem;
   width: 2rem;
-  top: 30px;
+  top: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -535,6 +539,31 @@ p.oh {
   color: white;
 }
 
+@media screen and (min-width: 580px) and (max-width: 1440px) {
+  .header_arrow {
+    left: 500px;
+    top: 47px;
+  }
+
+  .container {
+    max-width: 1440px;
+    position: relative;
+  }
+
+  .men {
+    display: flex;
+  }
+
+  #title {
+    display: flex;
+    justify-content: center;
+  }
+
+  #starters, #dishes, #desserts {
+    width: 500px;
+    margin-left: 35%;
+  }
+}
 /*-------------------------------------------------LOADER*/
 .loader-item {
   display: flex;
@@ -904,6 +933,66 @@ h3 {
   margin-left: 12px;
 }
 
+@media screen and (min-width: 580px) and (max-width: 1440px) {
+  .search-bar i {
+    position: absolute;
+    left: 580px;
+  }
+
+  #res {
+    padding-top: 0px;
+  }
+
+  .txt {
+    padding: 20px;
+  }
+
+  #explo {
+    display: flex;
+    padding: 60px;
+  }
+
+  #fonction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bout {
+    display: flex;
+    width: 1110px;
+    flex-direction: row;
+  }
+
+  .choise, .compo, .degust {
+    width: 25%;
+    margin-right: 50px;
+  }
+
+  .choise p, .compo p, .degust p {
+    width: 13%;
+  }
+
+  .fa-mobile-alt, .fa-list-ul, .fa-store {
+    position: absolute;
+    left: 32px;
+  }
+
+  #resto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .carte {
+    width: 500px;
+  }
+
+  #footer {
+    top: 1918px;
+  }
+}
 /* soucreMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 
