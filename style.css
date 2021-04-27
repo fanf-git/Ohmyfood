@@ -187,16 +187,16 @@ p.oh {
 
 .header_arrow {
   position: absolute;
-  left: 3rem;
+  left: 28px;
   height: 2rem;
   width: 2rem;
-  top: 44px;
+  top: 46px;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
   font-size: 1.2rem;
-  color: #000;
+  color: #535353;
 }
 
 /*-------------------------------------------------DRAWING*/
@@ -895,6 +895,7 @@ i.fas.fa-heart {
 i.fas.fa-heart:hover {
   background: linear-gradient(40deg, #ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
   z-index: 999;
