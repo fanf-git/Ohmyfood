@@ -292,6 +292,7 @@ i.fas.fa-heart {
   &:hover{
     background: linear-gradient(40deg,#ff79da, #9356dc);
     -webkit-text-fill-color:transparent;
+    background-clip: text;
     -webkit-background-clip: text;
     opacity: 1;
     z-index: 999;
