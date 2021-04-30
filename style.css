@@ -36,8 +36,8 @@ h2, h3, h4, p {
 
 /*-------------------------------------------------CONTAINER MENU*/
 .container {
-  max-width: 1280px;
-  margin: auto;
+  /*max-width: 1440px;*/
+  /*margin: auto;*/
   position: relative;
 }
 
@@ -126,9 +126,25 @@ p.oh {
   color: white;
 }
 
-@media screen and (min-width: 580px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   body {
     max-width: 1440px;
+  }
+
+  #container {
+    display: flex;
+  }
+
+  #footer {
+    display: flex;
+    width: 1320px;
+    margin: 0px 35px 0px 0px;
+    position: initial;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
   }
 }
 /*ACCUEIL*/
@@ -427,7 +443,7 @@ i .menuItem_wicon {
 }
 
 /*-------------------------------------------------CMD*/
-#explo {
+#explo-pages {
   height: 180px;
   padding-top: 50px;
   display: flex;
@@ -564,7 +580,15 @@ p.oh {
 
   #starters, #dishes, #desserts {
     width: 500px;
-    margin-left: 30%;
+    /*margin-left: 30%;*/
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body {
+    max-width: 1400px;
+    margin: 0px 35px 0px 100px;
   }
 }
 /*-------------------------------------------------LOADER*/
@@ -995,6 +1019,55 @@ h3 {
 
   #footer {
     top: 1918px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #fonction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 134px;
+  }
+
+  #explo {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .choise, .compo, .degust {
+    width: 109%;
+    margin-right: 50px;
+  }
+
+  .search-bar i {
+    position: absolute;
+    left: 690px;
+  }
+}
+@media screen and (min-width: 580px) and (max-width: 768px) {
+  #container {
+    display: flex;
+  }
+
+  #resto {
+    display: flex;
+  }
+
+  .bout {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+  }
+
+  .search-bar i {
+    position: absolute;
+    left: 275px;
+  }
+
+  #footer {
+    display: flex;
+    top: auto;
   }
 }
 /* soucreMappingURL=style.css.map */
