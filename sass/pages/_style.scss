@@ -375,6 +375,48 @@ i.fas.fa-heart {
     top: 1918px;
   }
 }
+@media screen and (min-width: 1400px){
+  #fonction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 134px;
+  }
+  #explo{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  .choise, .compo, .degust{
+    width: 109%;
+    margin-right: 50px;
+  }
+  .search-bar i{
+    position: absolute;
+    left: 690px;
+  }
+}
+@media screen and (min-width:580px) and (max-width:768px){
+  #container{
+    display: flex;
+  }
+  #resto{
+    display: flex;
+  }
+  .bout{
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+  }
+  .search-bar i{
+    position: absolute;
+    left: 275px;
+  }
+  #footer{
+    display: flex;
+    top: auto;
+  }
+}
 /* soucreMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
