@@ -33,8 +33,6 @@ h2, h3, h4, p {
 }
 /*-------------------------------------------------CONTAINER MENU*/
 .container{
-  /*max-width: 1440px;*/
-  /*margin: auto;*/
   position: relative;
 }
 /*-------------------------------------------------FOOTER*/
@@ -131,16 +129,17 @@ h2, h3, h4, p {
     }
     #container{
       display: flex;
+      justify-content: center;
     }
     #footer{
       display: flex;
-      width: 1320px;
+      width: 100%;
       margin: 0px 35px 0px 0px;
       position: initial;
     }
   }
-  @media screen and (max-width: 768px){
+  /*@media screen and(min-width:580px) and (max-width: 768px){
     body{
       width: 100%;
     }
-  }
+  }*/

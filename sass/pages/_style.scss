@@ -52,7 +52,7 @@
   background-color: #eaeaea;
 }
   .search-bar i {
-    position: absolute;
+    display: flex;
     top: 93px;
     left: 105px;
     border-top-left-radius: 15px;
@@ -241,9 +241,6 @@ button.search-bar {
   }
 span {
   height: 28px;
-  position: absolute;
-  top: 4px;
-  left: 7px;
   display: flex;
   justify-content: center;
   font-family: "roboto", sans-serif;
@@ -260,7 +257,6 @@ span {
     margin-top: 7px;
     background-color: #ffffff;
     border-radius: 25px;
-    /*box-shadow: 4px 4px 6px #aaa;*/
     position: relative;
   }
   .carte img {
@@ -327,10 +323,6 @@ i.fas.fa-heart {
   }
 
 @media screen and (min-width:580px) and (max-width: 1440px){
-  .search-bar i{
-    position: absolute;
-    left: 580px;
-  }
   #res{
     padding-top: 0px;
   }
@@ -348,11 +340,11 @@ i.fas.fa-heart {
   }
   .bout{
     display: flex;
-    width: 1110px;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
   }
   .choise, .compo, .degust{
-    width: 25%;
+    width: 110%;
     margin-right: 50px;
   }
   .choise p, .compo p, .degust p{
@@ -372,15 +364,23 @@ i.fas.fa-heart {
     width: 500px;
   }
   #footer{
-    top: 1918px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: auto;
   }
 }
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1440px){
+  body{
+    max-width: 1440px;
+  }
+  #res{
+    padding-top: 0px;
+  }
   #fonction{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 134px;
   }
   #explo{
     display: flex;
@@ -388,33 +388,21 @@ i.fas.fa-heart {
     padding-bottom: 25px;
   }
   .choise, .compo, .degust{
-    width: 109%;
     margin-right: 50px;
-  }
-  .search-bar i{
-    position: absolute;
-    left: 690px;
   }
 }
 @media screen and (min-width:580px) and (max-width:768px){
-  #container{
-    display: flex;
-  }
   #resto{
     display: flex;
   }
   .bout{
     display: flex;
     flex-direction: column;
-    width: 1100px;
-  }
-  .search-bar i{
-    position: absolute;
-    left: 275px;
   }
   #footer{
     display: flex;
     top: auto;
+    width: auto;
   }
 }
 /* soucreMappingURL=style.css.map */

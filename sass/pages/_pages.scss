@@ -169,9 +169,6 @@
     margin: 0;
     font-size: 0.9rem;
     font-weight: 500;
-    /*white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;*/
   }
   .menuItem_price{
     font-weight: 700;
@@ -179,7 +176,6 @@
     justify-content: flex-end;
     align-items: flex-end;
     transition-duration: .5s;
-    /*padding-left: .5rem;*/
     padding: 1rem;
   }
   .menuItem_confirmation{
@@ -278,8 +274,6 @@
   width: 100%;
   height: 200px;
   background-color: rgb(53, 53, 53);
-  position: absolute;
-  /*top: 1562px;*/
 }
   .footer
   {
@@ -360,8 +354,7 @@
 
   @media screen and (min-width:580px) and (max-width: 1440px){
     .header_arrow{
-      left: 500px;
-      top: 47px;
+      display: flex;
     }
     .container{
       max-width: 1440px;
@@ -376,7 +369,6 @@
     }
     #starters, #dishes, #desserts{
       width: 500px;
-      /*margin-left: 30%;*/
       display: flex;
       flex-direction: column;
     }
